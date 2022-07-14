@@ -1,24 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Experience from "./components/Experience";
+const profilePhoto = require("./images/alek.png");
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="root">
+      <div className="contact-info">
+        <img src={profilePhoto} className="avatar" />
+        <div className="name">Aleksander Halvorsen Holthe</div>
+      </div>
+      <Experience
+        img={
+          "https://innlandetfylke.no/kunde/grafikk/innlandet-fylkeskommune.svg"
+        }
+        title={"IT-support apprentice"}
+        info={"2017-2019 in Gjøvik, Norway"}
+      />
+      <Experience
+        img={
+          "https://innlandetfylke.no/kunde/grafikk/innlandet-fylkeskommune.svg"
+        }
+        title={"IT-support apprentice"}
+        info={"2017-2019 in Gjøvik, Norway"}
+      />
+      <Experience
+        img={
+          "https://innlandetfylke.no/kunde/grafikk/innlandet-fylkeskommune.svg"
+        }
+        title={"IT-support apprentice"}
+        info={"2017-2019 in Gjøvik, Norway"}
+      />
     </div>
   );
 }
