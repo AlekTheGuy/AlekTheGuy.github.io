@@ -6,6 +6,9 @@ const lillehammer = require("./images/lillehammer.png");
 const ofk = require("./images/ofk.png");
 
 function App() {
+  const description =
+    "Jeg jobbet to år som lærling innen IT support på Gjøvik videregående skole. Etter avsluttet lærlingtid tok jeg fagbrev //WRITE MORE";
+
   return (
     <div className="root">
       <div className="contact-info">
@@ -31,7 +34,7 @@ function App() {
             title={"IT-support lærling"}
             info={"2017-2019 I Gjøvik VGS"}
             button={true}
-            description="test"
+            description={description}
           />
         </div>
         <h2>Utdanning</h2>
@@ -70,6 +73,8 @@ function App() {
             button={false}
           />
         </div>
+        <h2>Egne prosjekter</h2>
+        <h2>//BRB JUST NEED TO HAVE SOM PROJECTS FIRST</h2>
       </div>
     </div>
   );

@@ -35,12 +35,30 @@ body {
   grid-gap: 20px;
 }
 
-.education {
+@media screen and (min-width:690px) {
+  .education {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    justify-content: center;
+    grid-gap: 20px;
+  }
+}
+
+@media screen and (max-width:690px) {
+  .education {
+    display: grid;
+    grid-template-columns: 300px;
+    justify-content: center;
+    grid-gap: 20px;
+  }
+}
+
+/* .education {
   display: grid;
   grid-template-columns: repeat(auto-fit, 300px);
   justify-content: center;
   grid-gap: 20px;
-}
+} */
 
 .test-results {
   display: grid;
