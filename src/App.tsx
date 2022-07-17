@@ -2,6 +2,7 @@ import "./App.css";
 import Experience from "./components/Experience";
 const profilePhoto = require("./images/alek.png");
 const ntnu = require("./images/ntnu.png");
+const lillehammer = require("./images/lillehammer.png");
 
 function App() {
   return (
@@ -21,23 +22,56 @@ function App() {
           </a>
         </div>
       </div>
-      <h2>Arbeidserfaring</h2>
-      <div className="experience">
-        <Experience
-          img={
-            "https://innlandetfylke.no/kunde/grafikk/innlandet-fylkeskommune.svg"
-          }
-          title={"IT-support lærling"}
-          info={"2017-2019 I Gjøvik"}
-        />
-      </div>
-      <h2>Utdannelse</h2>
-      <div className="Education">
-        <Experience
-          img={ntnu}
-          title={"Dataingeniør"}
-          info={"2020-2023 I Trondheim"}
-        />
+      <div className="qualifications">
+        <h2>Arbeidserfaring</h2>
+        <div className="experience">
+          <Experience
+            img={
+              "https://innlandetfylke.no/kunde/grafikk/innlandet-fylkeskommune.svg"
+            }
+            title={"IT-support lærling"}
+            info={"2017-2019 I Gjøvik VGS"}
+            button={true}
+          />
+        </div>
+        <h2>Utdanning</h2>
+        <div className="education">
+          <Experience
+            img={ntnu}
+            title={"Dataingeniør"}
+            info={"2020-2023 I Trondheim"}
+            button={false}
+          />
+          <Experience
+            img={ntnu}
+            title={"Forkurs for ingeniør- og sivilingeniørutdanning"}
+            info={"2019-2020 I Trondheim"}
+            button={false}
+          />
+          <Experience
+            img={lillehammer}
+            title={"IKT-servicefag"}
+            info={"2016-2017 I Lillehammer"}
+            button={false}
+          />
+          <Experience
+            img={lillehammer}
+            title={"Elektro og datateknologi"}
+            info={"2015-2016 I Lillehammer"}
+            button={false}
+          />
+        </div>
+        <h2>Utmerkelser</h2>
+        <div className="test-results">
+          <Experience
+            img={
+              "https://innlandetfylke.no/kunde/grafikk/innlandet-fylkeskommune.svg"
+            }
+            title={"Fagbrev IKT-servicefag"}
+            info={"2019, \n resultat: Bestått meget godt"}
+            button={false}
+          />
+        </div>
       </div>
     </div>
   );

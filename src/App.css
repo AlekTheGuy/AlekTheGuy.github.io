@@ -3,23 +3,27 @@ body {
 }
 
 .root {
-  min-height: 100vh;
-  width: auto;
   /* background: url("./images/background.png") no-repeat; */
-  background-color:rgb(115, 150, 148);
+  background-color: #7ddba0;
   background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
   text-align: center;
-  flex-direction: column;
-  gap: 20px;
+  display: grid;
+  align-items: start;
   padding: 30px;
+  grid-gap: 20px;
+}
+
+.qualifications {
+}
+
+.contact-info {
+  display: grid;
+  justify-items: center;
 }
 
 .name {
   font-size: 40px;
-  font-weight:500;
+  font-weight: 500;
 }
 
 .avatar {
@@ -28,11 +32,24 @@ body {
 }
 
 .experience {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-auto-flow: column;
   justify-content: center;
-  gap: 20px;
+  grid-gap: 20px;
+}
+
+.education {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  justify-content: center;
+  grid-gap: 20px;
+}
+
+.test-results {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  grid-gap: 20px;
 }
 
 .links {

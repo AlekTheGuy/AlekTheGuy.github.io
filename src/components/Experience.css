@@ -1,20 +1,29 @@
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.education-card {
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 50% 50%;
     align-items: center;
-    gap: 10px;
+    grid-gap: 10px;
     padding: 20px;
     border-radius: 5px;
-    width: 300px;
-    height: 200px;
-    background-color: rgba(255, 254, 254, 0.15);
+    width: 260px;
+    height: 160px;
+    background-color: rgba(255, 255, 255, 0.35);
     backdrop-filter: blur(10px);
 }
 
-.card > div {
-    flex: 1;
-    text-align: center;
+.experience-card {
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 50% 50%;
+    align-items: center;
+    grid-gap: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    width: 260px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(10px);
 }
 
 .img {
@@ -40,4 +49,15 @@
     color: white;
     transition: background-color 100ms ease-in;
     transition: color 100ms ease-in;
+}
+
+.text {
+    display: grid;
+    justify-items: center;
+    grid-gap: 10px;
+}
+
+.title-info {
+    display: grid;
+    grid-gap: 5px;
 }
