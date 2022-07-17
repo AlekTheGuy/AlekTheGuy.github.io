@@ -68,7 +68,7 @@ function App() {
               "https://innlandetfylke.no/kunde/grafikk/innlandet-fylkeskommune.svg"
             }
             title={"Fagbrev IKT-servicefag"}
-            info={"2019, \n resultat: Bestått meget godt"}
+            info={"2019 | resultat: Bestått meget godt"}
             button={false}
           />
         </div>
