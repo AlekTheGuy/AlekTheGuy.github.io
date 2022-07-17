@@ -1,6 +1,7 @@
 import "./App.css";
 import Experience from "./components/Experience";
 const profilePhoto = require("./images/alek.png");
+const ntnu = require("./images/ntnu.png");
 
 function App() {
   return (
@@ -26,26 +27,18 @@ function App() {
           img={
             "https://innlandetfylke.no/kunde/grafikk/innlandet-fylkeskommune.svg"
           }
-          title={"IT-support apprentice"}
-          info={"2017-2019 in Gjøvik, Norway"}
-        />
-        <Experience
-          img={
-            "https://innlandetfylke.no/kunde/grafikk/innlandet-fylkeskommune.svg"
-          }
-          title={"IT-support apprentice"}
-          info={"2017-2019 in Gjøvik, Norway"}
-        />
-        <Experience
-          img={
-            "https://innlandetfylke.no/kunde/grafikk/innlandet-fylkeskommune.svg"
-          }
-          title={"IT-support apprentice"}
-          info={"2017-2019 in Gjøvik, Norway"}
+          title={"IT-support lærling"}
+          info={"2017-2019 I Gjøvik"}
         />
       </div>
       <h2>Utdannelse</h2>
-      <h2>Prøveresultater</h2>
+      <div className="Education">
+        <Experience
+          img={ntnu}
+          title={"Dataingeniør"}
+          info={"2020-2023 I Trondheim"}
+        />
+      </div>
     </div>
   );
 }
