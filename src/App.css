@@ -13,9 +13,6 @@ body {
   grid-gap: 20px;
 }
 
-.qualifications {
-}
-
 .contact-info {
   display: grid;
   justify-items: center;

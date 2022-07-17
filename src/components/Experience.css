@@ -26,6 +26,16 @@
     backdrop-filter: blur(10px);
 }
 
+.modal {
+    border-radius: 5px;
+    background-color: rgba(194, 0, 0, 0.35);
+}
+
+.popup-overlay {
+    border-radius: 5px;
+    background-color: rgba(194, 0, 0, 0.35);
+}
+
 .img {
     max-width: 100%;
 }
@@ -61,3 +71,25 @@
     display: grid;
     grid-gap: 5px;
 }
+
+.popup-content {
+    margin: auto;
+    background: rgb(177, 13, 13);
+    width: 50%;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .popup-arrow {
+    color: rgb(255, 255, 255);
+  }
+  [role='tooltip'].popup-content {
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+  }
+  
+  .popup-overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  [data-popup='tooltip'].popup-overlay {
+    background: transparent;
+  }

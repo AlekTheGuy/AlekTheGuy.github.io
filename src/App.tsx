@@ -3,6 +3,7 @@ import Experience from "./components/Experience";
 const profilePhoto = require("./images/alek.png");
 const ntnu = require("./images/ntnu.png");
 const lillehammer = require("./images/lillehammer.png");
+const ofk = require("./images/ofk.png");
 
 function App() {
   return (
@@ -26,12 +27,11 @@ function App() {
         <h2>Arbeidserfaring</h2>
         <div className="experience">
           <Experience
-            img={
-              "https://innlandetfylke.no/kunde/grafikk/innlandet-fylkeskommune.svg"
-            }
+            img={ofk}
             title={"IT-support lærling"}
             info={"2017-2019 I Gjøvik VGS"}
             button={true}
+            description="test"
           />
         </div>
         <h2>Utdanning</h2>
@@ -64,9 +64,7 @@ function App() {
         <h2>Utmerkelser</h2>
         <div className="test-results">
           <Experience
-            img={
-              "https://innlandetfylke.no/kunde/grafikk/innlandet-fylkeskommune.svg"
-            }
+            img={ofk}
             title={"Fagbrev IKT-servicefag"}
             info={"2019 | resultat: Bestått meget godt"}
             button={false}

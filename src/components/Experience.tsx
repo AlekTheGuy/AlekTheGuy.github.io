@@ -1,10 +1,13 @@
 import "./Experience.css";
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
 
 interface ExperienceProps {
   img: string;
   title: string;
   info: string;
   button: boolean;
+  description?: string;
 }
 
 export default function Experience({
@@ -12,10 +15,15 @@ export default function Experience({
   title,
   info,
   button,
+  description,
 }: ExperienceProps) {
   const renderButton = () => {
     if (button) {
-      return <button className="btn">Mer info</button>;
+      return (
+        <Popup trigger={<button className="btn"> Mer info </button>} modal>
+          <div> {description} </div>
+        </Popup>
+      );
     }
   };
 
