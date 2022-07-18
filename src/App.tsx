@@ -11,20 +11,9 @@ function App() {
 
   return (
     <div className="root">
-      <div className="contact-info">
+      <div className="personal-info">
         <img src={profilePhoto} className="avatar" />
         <div className="name">Aleksander Halvorsen Holthe</div>
-        <div className="links">
-          <a href="https://github.com/AlekTheGuy" target={"blank"}>
-            Github
-          </a>
-          <a
-            href="https://www.linkedin.com/in/aleksander-halvorsen-h-69a713128/"
-            target={"blank"}
-          >
-            Linkedin
-          </a>
-        </div>
       </div>
       <div className="qualifications">
         <h2>Arbeidserfaring</h2>
@@ -73,8 +62,22 @@ function App() {
             button={false}
           />
         </div>
-        <h2>Egne prosjekter</h2>
-        <h2>//BRB JUST NEED TO HAVE SOM PROJECTS FIRST</h2>
+        <h2>Prosjekter</h2>
+        <h2>//TODO</h2>
+      </div>
+      <div className="footer">
+        <h2>Kontakt</h2>
+        <div className="links">
+          <a href="https://github.com/AlekTheGuy" target={"blank"}>
+            Github
+          </a>
+          <a
+            href="https://www.linkedin.com/in/aleksander-halvorsen-h-69a713128/"
+            target={"blank"}
+          >
+            Linkedin
+          </a>
+        </div>
       </div>
     </div>
   );

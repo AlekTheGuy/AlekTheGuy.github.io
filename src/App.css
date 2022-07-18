@@ -3,19 +3,26 @@ body {
 }
 
 .root {
-  /* background: url("./images/background.png") no-repeat; */
-  background-color: #afc8b8;
   background-size: cover;
   text-align: center;
   display: grid;
   align-items: start;
-  padding: 30px;
   grid-gap: 20px;
+  padding-top: 40px;
 }
 
-.contact-info {
+.footer {
   display: grid;
   justify-items: center;
+  width: 100%;
+  padding-bottom: 20px;
+  background-color: rgb(229, 229, 220);
+}
+
+.personal-info {
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 40px;
 }
 
 .name {
@@ -26,6 +33,7 @@ body {
 .avatar {
   height: 150px;
   border-radius: 50%;
+  justify-self: center;
 }
 
 .experience {
@@ -52,13 +60,6 @@ body {
     grid-gap: 20px;
   }
 }
-
-/* .education {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 300px);
-  justify-content: center;
-  grid-gap: 20px;
-} */
 
 .test-results {
   display: grid;
