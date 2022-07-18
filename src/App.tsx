@@ -13,7 +13,13 @@ function App() {
     <div className="root">
       <div className="personal-info">
         <img src={profilePhoto} className="avatar" />
-        <div className="name">Aleksander Halvorsen Holthe</div>
+        <div className="intro-text">
+          Hei! mitt navn er
+          <span className="highlighted-text"> Aleksander Halvorsen Holthe </span>
+          og jeg går siste året på studiet
+          <span className="highlighted-text"> dataingeniør </span> ved NTNU i
+          Trondheim
+        </div>
       </div>
       <div className="qualifications">
         <h2>Arbeidserfaring</h2>
@@ -66,7 +72,6 @@ function App() {
         <h2>//TODO</h2>
       </div>
       <div className="footer">
-        <h2>Kontakt</h2>
         <div className="links">
           <a href="https://github.com/AlekTheGuy" target={"blank"}>
             Github
@@ -78,6 +83,7 @@ function App() {
             Linkedin
           </a>
         </div>
+        <footer>Made by Aleksander Halvorsen Holthe © 2022</footer>
       </div>
     </div>
   );

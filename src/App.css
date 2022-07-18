@@ -15,8 +15,10 @@ body {
   display: grid;
   justify-items: center;
   width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   background-color: rgb(229, 229, 220);
+  grid-gap: 10px;
 }
 
 .personal-info {
@@ -25,9 +27,16 @@ body {
   grid-gap: 40px;
 }
 
-.name {
-  font-size: 40px;
+.intro-text {
+  font-size: 50px;
   font-weight: 500;
+  width: 70%;
+  max-width: 1500px;
+  justify-self: center;
+}
+
+.highlighted-text {
+  color: rgb(54, 81, 148);
 }
 
 .avatar {
@@ -58,6 +67,11 @@ body {
     grid-template-columns: 300px;
     justify-content: center;
     grid-gap: 20px;
+  }
+
+  .intro-text {
+    width: 100%;
+    justify-self: center;
   }
 }
 
