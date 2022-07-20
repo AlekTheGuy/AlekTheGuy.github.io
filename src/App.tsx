@@ -82,14 +82,17 @@ function App() {
         <div className="projects">
           <Project
             title="BoCo - Borrow community"
-            description="
-          Borrow community er en nettside laget for å virke som et invetar for borettslag eller andre grupper.
-          Via denne nettsiden kan man legge ut, reservere og låne ting man trenger.
-          Nettsiden ble laget i 4.semester av en gruppe på 10 personer hvor vi fulgte scrum metodikk.
-          mitt bidrag besto av å designe/sette opp database, samt jobbe med å lage og teste en del av REST apiet"
-            technologies="Java, Spring Boot, Docker, javascript, Vue, PostgreSQL"
             info="Laget ved hjelp av scrum i team på 10 personer"
+            description="//TODO"
+            technologies="Java, Spring Boot, Docker, javascript, Vue, PostgreSQL"
             sourcecode="https://github.com/AlekTheGuy/BoCo"
+          />
+          <Project
+            title="Portfolio"
+            info="Dette er siden du er på nå! Laget på egenhånd for å lære react og typescript"
+            description="//TODO"
+            technologies="React, Typescript, CSS, HTML"
+            sourcecode="https://github.com/AlekTheGuy/alektheguy.github.io"
           />
         </div>
       </div>

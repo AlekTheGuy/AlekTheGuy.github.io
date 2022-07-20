@@ -10,10 +10,6 @@ interface ExperienceProps {
   sourcecode?: string;
 }
 
-const openInNewTab = (url: string) => {
-  window.open(url, "_blank", "noopener,noreferrer");
-};
-
 export default function Project({
   title,
   description,
