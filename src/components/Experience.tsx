@@ -8,6 +8,7 @@ interface ExperienceProps {
   info: string;
   button: boolean;
   description?: string;
+  className?: string;
 }
 
 export default function Experience({
@@ -16,6 +17,7 @@ export default function Experience({
   info,
   button,
   description,
+  className,
 }: ExperienceProps) {
   const renderButton = () => {
     if (button) {
@@ -28,7 +30,7 @@ export default function Experience({
   };
 
   return (
-    <div className={button ? "experience-card" : "education-card"}>
+    <div className={className}>
       <div>
         <img src={img} className="img" />
       </div>
