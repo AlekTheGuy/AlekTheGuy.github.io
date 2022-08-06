@@ -32,7 +32,7 @@ function App() {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <FaLinkedin size={60} color={"black"} />
+            <FaLinkedin size={45} color={"black"} />
           </a>
 
           <a
@@ -40,7 +40,7 @@ function App() {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <FaGithub size={60} color={"black"} />
+            <FaGithub size={45} color={"black"} />
           </a>
 
           <a
@@ -48,7 +48,7 @@ function App() {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <FiMail size={60} color={"black"} />
+            <FiMail size={45} color={"black"} />
           </a>
         </div>
       </div>
