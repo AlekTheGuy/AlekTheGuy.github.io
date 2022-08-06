@@ -1,6 +1,8 @@
 import "./App.css";
 import Experience from "./components/Experience";
 import Project from "./components/Project";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
 const profilePhoto = require("./images/alek.png");
 const ntnu = require("./images/ntnu.png");
 const lillehammer = require("./images/lillehammer.png");
@@ -23,6 +25,11 @@ function App() {
           og jeg går siste året på studiet
           <span className="highlighted-text"> dataingeniør </span> ved NTNU i
           Trondheim
+        </div>
+        <div className="contact">
+          <FaGithub size={60} color={"black"} />
+          <FaLinkedin size={60} color={"black"} />
+          <FiMail size={60} color={"black"} />
         </div>
       </div>
       <div className="qualifications">
@@ -89,7 +96,7 @@ function App() {
           />
           <Project
             title="Portfolio"
-            info="Dette er siden du er på nå! Laget på egenhånd for å lære react og typescript"
+            info="Dette er siden du er på nå! Laget for å lære react og typescript"
             description="//TODO"
             technologies="React, Typescript, CSS, HTML"
             sourcecode="https://github.com/AlekTheGuy/alektheguy.github.io"
