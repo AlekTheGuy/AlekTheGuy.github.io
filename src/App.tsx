@@ -27,9 +27,29 @@ function App() {
           Trondheim
         </div>
         <div className="contact">
-          <FaGithub size={60} color={"black"} />
-          <FaLinkedin size={60} color={"black"} />
-          <FiMail size={60} color={"black"} />
+          <a
+            href="https://www.linkedin.com/in/aleksander-halvorsen-h-69a713128/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <FaLinkedin size={60} color={"black"} />
+          </a>
+
+          <a
+            href="https://github.com/AlekTheGuy/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <FaGithub size={60} color={"black"} />
+          </a>
+
+          <a
+            href="mailto:alekhh123@gmail.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <FiMail size={60} color={"black"} />
+          </a>
         </div>
       </div>
       <div className="qualifications">
@@ -96,7 +116,7 @@ function App() {
           />
           <Project
             title="Portfolio"
-            info="Dette er siden du er på nå! Laget for å lære react og typescript"
+            info="Dette er siden du er på nå! Laget for å lære react og typescript, samt å bli bedre til å lage GUI som fungerer på alle enheter"
             description="//TODO"
             technologies="React, Typescript, CSS, HTML"
             sourcecode="https://github.com/AlekTheGuy/alektheguy.github.io"
@@ -104,17 +124,6 @@ function App() {
         </div>
       </div>
       <div className="footer">
-        <div className="links">
-          <a href="https://github.com/AlekTheGuy" target={"blank"}>
-            Github
-          </a>
-          <a
-            href="https://www.linkedin.com/in/aleksander-halvorsen-h-69a713128/"
-            target={"blank"}
-          >
-            Linkedin
-          </a>
-        </div>
         <footer>Made by Aleksander Halvorsen Holthe © 2022</footer>
       </div>
     </div>

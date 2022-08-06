@@ -28,7 +28,7 @@ body {
   height: calc(100vh - 80px);
   justify-items: center;
   align-items: center;
-  align-content: start;
+  align-content: center;
 }
 
 .intro-text {
