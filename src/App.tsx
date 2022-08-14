@@ -17,7 +17,7 @@ function App() {
       <div className="personal-info">
         <img src={profilePhoto} className="avatar" />
         <div className="intro-text">
-          Hei! mitt navn er
+          Hei! Mitt navn er
           <span className="highlighted-text">
             {" "}
             Aleksander Halvorsen Holthe{" "}
