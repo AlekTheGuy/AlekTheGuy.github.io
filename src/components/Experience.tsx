@@ -22,7 +22,7 @@ export default function Experience({
   const renderButton = () => {
     if (button) {
       return (
-        <Popup trigger={<button className="btn"> Mer info </button>} modal>
+        <Popup trigger={<button className="btn"> Mer info </button>} modal contentStyle={{ width: '80%' }}>
           <div> {description} </div>
         </Popup>
       );

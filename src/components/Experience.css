@@ -1,112 +1,116 @@
 .education-card {
-    display: grid;
-    justify-items: center;
-    grid-template-rows: 50% 50%;
-    align-items: center;
-    grid-gap: 10px;
-    padding: 20px;
-    border-radius: 5px;
-    width: 260px;
-    height: 160px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 50% 50%;
+  align-items: center;
+  grid-gap: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  width: 260px;
+  height: 160px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   ;
 }
 
 .experience-card {
-    display: grid;
-    justify-items: center;
-    grid-template-rows: 50% 50%;
-    align-items: center;
-    grid-gap: 10px;
-    padding: 20px;
-    border-radius: 5px;
-    width: 260px;
-    height: 200px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 50% 50%;
+  align-items: center;
+  grid-gap: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  width: 260px;
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   ;
 }
 
 .img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .title {
-    font-weight: bold;
-    font-size: larger;
+  font-weight: bold;
+  font-size: larger;
 }
 
 .btn {
-    height: 40px;
-    width: 80px;
-    background-color: rgba(255, 254, 254, 0);
-    border-radius: 5px;
-    border-color: black;
-    border-width: 1px;
+  height: 40px;
+  width: 80px;
+  background-color: rgba(255, 254, 254, 0);
+  border-radius: 5px;
+  border-color: black;
+  border-width: 1px;
 }
 
 .btn:hover {
-    background-color:rgb(56, 56, 56);
-    color: white;
-    transition: background-color 100ms ease-in;
-    transition: color 100ms ease-in;
+  background-color: rgb(56, 56, 56);
+  color: white;
+  transition: background-color 100ms ease-in;
+  transition: color 100ms ease-in;
 }
 
 .text {
-    display: grid;
-    justify-items: center;
-    grid-gap: 10px;
+  display: grid;
+  justify-items: center;
+  grid-gap: 10px;
 }
 
 .title-info {
-    display: grid;
-    grid-gap: 5px;
+  display: grid;
+  grid-gap: 5px;
 }
 
 
 /* Modal css */
 .popup-content {
-    margin: auto;
-    background: rgb(177, 13, 13);
-    width: 50%;
-    padding: 5px;
-    border-radius: 5px;
-  }
-  .popup-arrow {
-    color: rgb(255, 255, 255);
-  }
-  [role='tooltip'].popup-content {
-    width: 200px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
-  }
-  
-  .popup-overlay {
-    background: rgba(0, 0, 0, 0.5);
-  }
-  [data-popup='tooltip'].popup-overlay {
-    background: transparent;
-  }
+  margin: auto;
+  padding: 5px;
+  border-radius: 5px;
+  white-space: pre-line;
+}
 
-  /* Modal animation */
+.popup-arrow {
+  color: rgb(255, 255, 255);
+}
+
+[role='tooltip'].popup-content {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+[data-popup='tooltip'].popup-overlay {
+  background: transparent;
+}
+
+/* Modal animation */
 
 @keyframes anvil {
-    0% {
-      transform: scale(1) translateY(0px);
-      opacity: 0;
-      box-shadow: 0 0 0 rgba(241, 241, 241, 0);
-    }
-    1% {
-      transform: scale(0.96) translateY(10px);
-      opacity: 0;
-      box-shadow: 0 0 0 rgba(241, 241, 241, 0);
-    }
-    100% {
-      transform: scale(1) translateY(0px);
-      opacity: 1;
-      box-shadow: 0 0 500px rgba(241, 241, 241, 0);
-    }
+  0% {
+    transform: scale(1) translateY(0px);
+    opacity: 0;
+    box-shadow: 0 0 0 rgba(241, 241, 241, 0);
   }
-  .popup-content {
-    -webkit-animation: anvil 0.3s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
+
+  1% {
+    transform: scale(0.96) translateY(10px);
+    opacity: 0;
+    box-shadow: 0 0 0 rgba(241, 241, 241, 0);
   }
+
+  100% {
+    transform: scale(1) translateY(0px);
+    opacity: 1;
+    box-shadow: 0 0 500px rgba(241, 241, 241, 0);
+  }
+}
+
+.popup-content {
+  -webkit-animation: anvil 0.3s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
+}

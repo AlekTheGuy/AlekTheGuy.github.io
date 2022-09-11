@@ -10,7 +10,11 @@ const ofk = require("./images/ofk.png");
 
 function App() {
   const description =
-    "Jeg jobbet to år som lærling innen IT support på Gjøvik videregående skole. Etter avsluttet lærlingtid tok jeg fagbrev //WRITE MORE";
+    `Jeg jobbet to år som lærling innen IT support på Gjøvik videregående skole. 
+   Som lærling jobbet jeg hovedsaklig med feilsøking av teknisk utstyr (datamaskiner, skjermer, smartboard, osv) 
+   samt drift av skolens lokale systemer, f.eks endring på subnets, undersøking av  rettigheter, vedlikehold på virtualiserte systemer og dokumentering på lokal wiki. \n
+   Etter avsluttet lærlingtid tok jeg fagbrev med resultat meget godt bestått. Fagprøven bestod av å sette opp ett lokalt nettverk med DHCP, Active directory med rettigheter, filserver, osv.
+   `;
 
   return (
     <div className="root">
@@ -120,6 +124,13 @@ function App() {
             description="//TODO"
             technologies="React, Typescript, CSS, HTML"
             sourcecode="https://github.com/AlekTheGuy/alektheguy.github.io"
+          />
+          <Project
+            title="C++ online kompilator"
+            info="En nettside som kjører c++ kode i docker og skriver ut resultat fra terminalen."
+            description="//TODO"
+            technologies="Java, Spring boot, Docker, HTML, CSS"
+            sourcecode="https://github.com/AlekTheGuy/IDATT2104-NetworkProgramming/tree/main/P5"
           />
         </div>
       </div>
