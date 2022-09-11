@@ -13,7 +13,7 @@ function App() {
     `Jeg jobbet to år som lærling innen IT support på Gjøvik videregående skole. 
    Som lærling jobbet jeg hovedsaklig med feilsøking av teknisk utstyr (datamaskiner, skjermer, smartboard, osv) 
    samt drift av skolens lokale systemer, f.eks endring på subnets, undersøking av  rettigheter, vedlikehold på virtualiserte systemer og dokumentering på lokal wiki. \n
-   Etter avsluttet lærlingtid tok jeg fagbrev med resultat meget godt bestått. Fagprøven bestod av å sette opp ett lokalt nettverk med DHCP, Active directory med rettigheter, filserver, osv.
+   Etter avsluttet lærlingtid tok jeg fagbrev med resultat meget godt bestått. Fagprøven bestod av å sette opp et lokalt nettverk med DHCP, Active directory med rettigheter, filserver, osv.
    `;
 
   return (
@@ -114,21 +114,26 @@ function App() {
           <Project
             title="BoCo - Borrow community"
             info="Laget ved hjelp av scrum i team på 10 personer"
-            description="//TODO"
+            description="Dette prosjektet gikk over 3 uker som et eget fag i 4. semester. Vi brukte scrum og hadde daglige stand-up møter. Vi hadde også en produkteier
+            som vi kommuniserte med for å få de nøyaktige kravene til oppgaven. Jeg jobbet i dette prosjektet med backend, jeg tegnet opp databasen og jobbet med 
+            service og kontroller klasser i spring boot. Jeg lærte utrolig mye av dette prosjektet da vi for første gang hadde et stort prosjekt uten noen andre fag å bry oss om."
             technologies="Java, Spring Boot, Docker, javascript, Vue, PostgreSQL"
             sourcecode="https://github.com/AlekTheGuy/BoCo"
           />
           <Project
             title="Portfolio"
             info="Dette er siden du er på nå! Laget for å lære react og typescript, samt å bli bedre til å lage GUI som fungerer på alle enheter"
-            description="//TODO"
+            description="Nettsiden er laget med inspirasjon fra en lang liste andre portfolio nettsider jeg fant via github. Den er laget i vanlig react med typescript uten GUI bibliotek eller template.
+            Nettsiden er laget for å dynamisk tilpasse seg og være brukelig på alle vanlige enheter."
             technologies="React, Typescript, CSS, HTML"
             sourcecode="https://github.com/AlekTheGuy/alektheguy.github.io"
           />
           <Project
             title="C++ online kompilator"
             info="En nettside som kjører c++ kode i docker og skriver ut resultat fra terminalen."
-            description="//TODO"
+            description="Nettsiden sender c++ koden som API kall til spring boot. Spring boot lager en gcc docker container som kjører den innsendte koden.
+            GCC containeren sin terminal blir så sendt tilbake til nettsiden. For å kjøre må man ha installert docker og lastet ned GCC container. 
+            Den kan også bare kjøres på UNIX basert operativsystem."
             technologies="Java, Spring boot, Docker, HTML, CSS"
             sourcecode="https://github.com/AlekTheGuy/IDATT2104-NetworkProgramming/tree/main/P5"
           />
