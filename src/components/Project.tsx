@@ -32,7 +32,7 @@ export default function Project({
           </button>
         </a>
 
-        <Popup trigger={<button className="btn"> Mer info </button>} modal contentStyle={{ width: '80%' }}>
+        <Popup trigger={<button className="btn"> Mer info </button>} modal contentStyle={{ width: '80%', maxWidth: "1000px" }}>
           <div> {description} </div>
         </Popup>
       </div>
