@@ -8,7 +8,11 @@ interface ExperienceProps {
   technologies: string;
   info: string;
   sourcecode?: string;
+  demoButton?: Boolean;
+  demoLink?: string;
 }
+
+
 
 export default function Project({
   title,
@@ -16,7 +20,26 @@ export default function Project({
   technologies,
   info,
   sourcecode,
+  demoButton,
+  demoLink,
 }: ExperienceProps) {
+
+  const demo = () => {
+    if (demoButton) {
+      return (
+        <a href={demoLink} target="_blank">
+          <button
+            className="btn"
+            formAction="https://github.com/AlekTheGuy/BoCo"
+          >
+            Demo
+          </button>
+        </a>
+      );
+    }
+  }
+
+
   return (
     <div className="project-card">
       <div className="title">{title}</div>
@@ -35,6 +58,8 @@ export default function Project({
         <Popup trigger={<button className="btn"> Mer info </button>} modal contentStyle={{ width: '80%', maxWidth: "1000px" }}>
           <div> {description} </div>
         </Popup>
+
+        {demo()}
       </div>
     </div>
   );

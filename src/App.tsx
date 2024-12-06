@@ -130,12 +130,23 @@ function App() {
           />
           <Project
             title="C++ online kompilator"
-            info="En nettside som kjører c++ kode i docker og skriver ut resultat fra terminalen."
+            info="En nettside som kjører c++ kode i docker og skriver ut resultat fra terminalen"
             description="Nettsiden sender c++ koden som API kall til spring boot. Spring boot lager en gcc docker container som kjører den innsendte koden.
             GCC containeren sin terminal blir så sendt tilbake til nettsiden. For å kjøre må man ha installert docker og lastet ned GCC container. 
             Den kan også bare kjøres på UNIX basert operativsystem."
             technologies="Java, Spring boot, Docker, HTML, CSS"
             sourcecode="https://github.com/AlekTheGuy/IDATT2104-NetworkProgramming/tree/main/P5"
+          />
+          <Project
+            title="Investeringskalkulator"
+            info="En lett investeringskalkulator med chart.js graf"
+            description="Jeg laget denne investeringskalkulatoren for eget bruk. Jeg hadde allerede laget porteføljenettsiden med vanlig react, så jeg ville prøve å bruke material design denne gangen(noe jeg ikke var så stor fan av i forhold til å designe selv(kanskje jeg bare er dårlig på material design)).
+            Jeg er veldig glad i data og grafer, så jeg lærte meg chartjs. Jeg er fortsatt ikke ferdig da jeg må finne ut hvorfor alt av teknisk utstyr smelter når jeg implementerer en stacked bar chart.
+            Når jeg har tid skal jeg også legge til automatisk kalkulering for det norske skattesystemet."
+            technologies="React, Typescript, Material design, Chart.JS, HTML, CSS"
+            sourcecode="https://github.com/AlekTheGuy/IDATT2104-NetworkProgramming/tree/main/P5"
+            demoButton={true}
+            demoLink="https://alekholthe.no/investment-calculator/"
           />
         </div>
       </div>
