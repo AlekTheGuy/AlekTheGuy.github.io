@@ -3,10 +3,12 @@ import Experience from "./components/Experience";
 import Project from "./components/Project";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
-const profilePhoto = require("./images/alek.png");
+const profilePhoto = require("./images/alek.jpg");
 const ntnu = require("./images/ntnu.png");
 const lillehammer = require("./images/lillehammer.png");
 const ofk = require("./images/ofk.png");
+const comsol = require("./images/comsol.png")
+const bdo = require("./images/BDO.png")
 
 function App() {
   const description =
@@ -15,6 +17,8 @@ function App() {
    samt drift av skolens lokale systemer, f.eks endring på subnets, undersøking av  rettigheter, vedlikehold på virtualiserte systemer og dokumentering på lokal wiki. \n
    Etter avsluttet lærlingtid tok jeg fagbrev med resultat meget godt bestått. Fagprøven bestod av å sette opp et lokalt nettverk med DHCP, Active directory med rettigheter, filserver, osv.
    `;
+
+  let currentYear = new Date().getFullYear();
 
   return (
     <div className="root">
@@ -26,8 +30,8 @@ function App() {
             {" "}
             Aleksander Halvorsen Holthe{" "}
           </span>
-          og jeg går siste året på studiet
-          <span className="highlighted-text"> dataingeniør </span> ved NTNU i
+          og jeg jobber som
+          <span className="highlighted-text"> utvikler </span> hos COMSOL i
           Trondheim
         </div>
         <div className="contact">
@@ -59,6 +63,22 @@ function App() {
       <div className="qualifications">
         <h2>Arbeidserfaring</h2>
         <div className="experience">
+          <Experience
+            img={comsol}
+            title={"Utvikler"}
+            info={"2023-nå I COMSOL Trondheim"}
+            button={true}
+            description={description}
+            className={"experience-card"}
+          />
+          <Experience
+            img={bdo}
+            title={"Utvikler deltid"}
+            info={"2022-2023 (7mnd) I Trondheim"}
+            button={true}
+            description={description}
+            className={"experience-card"}
+          />
           <Experience
             img={ofk}
             title={"IT-support lærling"}
@@ -151,7 +171,7 @@ function App() {
         </div>
       </div>
       <div className="footer">
-        <footer>Made by Aleksander Halvorsen Holthe © 2022</footer>
+        <footer>Made by Aleksander Halvorsen Holthe © {currentYear}</footer>
       </div>
     </div>
   );

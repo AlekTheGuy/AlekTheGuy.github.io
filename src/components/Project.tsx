@@ -12,8 +12,6 @@ interface ExperienceProps {
   demoLink?: string;
 }
 
-
-
 export default function Project({
   title,
   description,
@@ -38,7 +36,6 @@ export default function Project({
       );
     }
   }
-
 
   return (
     <div className="project-card">
