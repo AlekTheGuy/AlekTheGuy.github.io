@@ -57,7 +57,7 @@ body {
   border-radius: 50%;
 }
 
-.experience {
+.experience-current {
   display: grid;
   grid-auto-flow: column;
   justify-content: center;
@@ -78,10 +78,24 @@ body {
     justify-content: center;
     grid-gap: 20px;
   }
+
+  .experience-past {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    justify-content: center;
+    grid-gap: 20px;
+  }
 }
 
 @media screen and (max-width:690px) {
   .education {
+    display: grid;
+    grid-template-columns: 300px;
+    justify-content: center;
+    grid-gap: 20px;
+  }
+
+  .experience-past {
     display: grid;
     grid-template-columns: 300px;
     justify-content: center;

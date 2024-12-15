@@ -11,12 +11,18 @@ const comsol = require("./images/comsol.png")
 const bdo = require("./images/BDO.png")
 
 function App() {
-  const description =
+  const description_ofk =
     `Jeg jobbet to år som lærling innen IT support på Gjøvik videregående skole. 
    Som lærling jobbet jeg hovedsaklig med feilsøking av teknisk utstyr (datamaskiner, skjermer, smartboard, osv) 
    samt drift av skolens lokale systemer, f.eks endring på subnets, undersøking av  rettigheter, vedlikehold på virtualiserte systemer og dokumentering på lokal wiki. \n
    Etter avsluttet lærlingtid tok jeg fagbrev med resultat meget godt bestått. Fagprøven bestod av å sette opp et lokalt nettverk med DHCP, Active directory med rettigheter, filserver, osv.
    `;
+
+  const description_comsol = 
+  `Jeg jobber her i et konsulentteam som er utleid til equinor for å utvikle programvare for økonomisk analyse. Vi bruker C# og .NET for backend samt WPF for frontend`;
+
+  const description_bdo = 
+  `Jeg jobbet deltid i team med to andre studenter for å automatisere internt repetitivt arbeid. Vi brukte C# og .NET`;
 
   let currentYear = new Date().getFullYear();
 
@@ -52,7 +58,7 @@ function App() {
           </a>
 
           <a
-            href="mailto:alekhh123@gmail.com"
+            href="mailto:mail@alekholthe.no"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -62,21 +68,24 @@ function App() {
       </div>
       <div className="qualifications">
         <h2>Arbeidserfaring</h2>
-        <div className="experience">
+        <div className="experience-current">
           <Experience
             img={comsol}
             title={"Utvikler"}
-            info={"2023-nå I COMSOL Trondheim"}
+            info={"2023-d.d I COMSOL Trondheim"}
             button={true}
-            description={description}
+            description={description_comsol}
             className={"experience-card"}
           />
+        </div>
+        <h2></h2>
+        <div className="experience-past">
           <Experience
             img={bdo}
             title={"Utvikler deltid"}
             info={"2022-2023 (7mnd) I Trondheim"}
             button={true}
-            description={description}
+            description={description_bdo}
             className={"experience-card"}
           />
           <Experience
@@ -84,7 +93,7 @@ function App() {
             title={"IT-support lærling"}
             info={"2017-2019 I Gjøvik VGS"}
             button={true}
-            description={description}
+            description={description_ofk}
             className={"experience-card"}
           />
         </div>
