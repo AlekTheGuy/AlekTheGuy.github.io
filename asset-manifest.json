@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c011f9ad.css",
-    "main.js": "/static/js/main.cd2c84fe.js",
+    "main.css": "/static/css/main.75ee853c.css",
+    "main.js": "/static/js/main.a55eb4e2.js",
     "static/media/alek.jpg": "/static/media/alek.01eace4be484c7d6cba2.jpg",
     "static/media/BDO.png": "/static/media/BDO.fd82581541345b35ec63.png",
     "static/media/roboto-all-400-normal.woff": "/static/media/roboto-all-400-normal.c5d001fa922fa66a147f.woff",
@@ -17,11 +17,11 @@
     "static/media/roboto-vietnamese-400-normal.woff2": "/static/media/roboto-vietnamese-400-normal.3230f9b040f3c630e0c3.woff2",
     "static/media/roboto-greek-ext-400-normal.woff2": "/static/media/roboto-greek-ext-400-normal.169619821ea93019d1bb.woff2",
     "index.html": "/index.html",
-    "main.c011f9ad.css.map": "/static/css/main.c011f9ad.css.map",
-    "main.cd2c84fe.js.map": "/static/js/main.cd2c84fe.js.map"
+    "main.75ee853c.css.map": "/static/css/main.75ee853c.css.map",
+    "main.a55eb4e2.js.map": "/static/js/main.a55eb4e2.js.map"
   },
   "entrypoints": [
-    "static/css/main.c011f9ad.css",
-    "static/js/main.cd2c84fe.js"
+    "static/css/main.75ee853c.css",
+    "static/js/main.a55eb4e2.js"
   ]
 }
